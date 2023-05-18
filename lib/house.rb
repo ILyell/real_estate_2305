@@ -42,4 +42,20 @@ class House
             "address" => address
         }
     end
+
+    def price_per_square_foot
+        (price.to_f / area.to_f).ceil(2)
+    end
+
+    def rooms_sorted_by_area
+        rooms.sort do |room|
+            room.area
+        end
+    end
+
+    def rooms_by_category
+        rooms_by_category = {
+            
+        }
+    end
 end

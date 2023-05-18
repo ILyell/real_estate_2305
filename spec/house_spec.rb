@@ -115,7 +115,7 @@ RSpec.describe House do
         house.add_room(room3)
         house.add_room(room4)
 
-        expect(house.rooms_sorted_by_area).to eq(room4, room3, room2, room1)
+        expect(house.rooms_sorted_by_area).to eq([room4, room3, room2, room1])
     end
 
     it 'Can list rooms in a hash by category' do 
